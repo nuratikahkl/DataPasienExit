@@ -113,7 +113,15 @@ public class Login extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
-
+    private void BtnLoginActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        String kataSandi = new String(FieldPassword.getPassword());
+        
+        if((FieldUsername.getText().equals())&&(kataSandi.equals())){
+            JOptionPane.showMessageDialog(this, "Anda berhasil login!", "Pesan", JOptionPane.INFORMATION_MESSAGE);
+            this.dispose();
+        }
+    }
     /**
      * @param args the command line arguments
      */
