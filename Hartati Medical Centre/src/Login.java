@@ -120,6 +120,8 @@ public class Login extends javax.swing.JFrame {
         if((FieldUsername.getText().equals())&&(kataSandi.equals())){
             JOptionPane.showMessageDialog(this, "Anda berhasil login!", "Pesan", JOptionPane.INFORMATION_MESSAGE);
             this.dispose();
+        }else{
+            JOptionPane.showMessageDialog(this, "Maaf, Anda Gagal Login!", "Pesan", JOptionPane.INFORMATION_MESSAGE);
         }
     }
     /**
