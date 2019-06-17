@@ -52,6 +52,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         Button1.setText("Update");
+        Button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button1ActionPerformed(evt);
+            }
+        });
 
         Button5.setText("Remove");
         Button5.addActionListener(new java.awt.event.ActionListener() {
@@ -171,6 +176,13 @@ private void load_table(){
         n.setVisible(true);
          this.dispose();
     }//GEN-LAST:event_Button5ActionPerformed
+
+    private void Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button1ActionPerformed
+        // TODO add your handling code here:
+         UpdateData n = new UpdateData();
+        n.setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_Button1ActionPerformed
 
     /**
      * @param args the command line arguments

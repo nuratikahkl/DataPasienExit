@@ -303,6 +303,9 @@ public class UpdateData extends javax.swing.JFrame {
 
     private void Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button1ActionPerformed
         // TODO add your handling code here:
+         Home n = new Home();
+        n.setVisible(true);
+         this.dispose();
     }//GEN-LAST:event_Button1ActionPerformed
 
     private void tabelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_tabelAncestorAdded
