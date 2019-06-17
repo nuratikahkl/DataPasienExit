@@ -9,12 +9,22 @@ package datapasienexit;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 /**
  *
  * @author ACER
  */
+
+
+
 public class Config {
+    Connection con;
+    Statement stat;
+    Statement stm;
+    ResultSet rs;
+    String sql;
     private static Connection mysqlconfig;
     public static Connection configDB()throws SQLException{
         try {
@@ -28,6 +38,10 @@ public class Config {
         }
         return mysqlconfig;
     }     
+
+    static Object GetConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
